@@ -8,6 +8,13 @@
     <artifactId>springcloud-2020</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
+
+<!--    TODO-1:-->
+<!--        1.pom-parent,多module项目。 项目结构-->
+<!--        2.module划分-->
+<!--        3.参照spring项目写pom-->
+<!--        4.idea中多springboot,使用services插件-->
+
     <modules>
         <module>cloud-provider-payment-8001</module>
         <module>cloud-provider-payment-8002</module>
@@ -42,9 +49,11 @@
         <module>seata-storage-service-2002</module>
         <module>seata-accout-service-2003</module>
     </modules>
+
     <!-- 统一管理jar包版本 -->
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+<!--        为Compiler插件设置source和target版本-->
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <junit.version>4.12</junit.version>
@@ -129,8 +138,5 @@
             </plugin>
         </plugins>
     </build>
-
-
-
 
 </project>
